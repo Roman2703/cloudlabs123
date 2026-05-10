@@ -40,7 +40,7 @@ todos = {}
 def init_autodoc_swagger(app: Flask) -> None:
     app.config.setdefault("SWAGGER", {
         "uiversion": 3,
-        "title": "Test Ci Cd",
+        "title": "wORKFLOW",
         "openapi": "3.0.3",
     })
 
