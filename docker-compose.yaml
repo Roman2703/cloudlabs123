@@ -1,6 +1,6 @@
 services:
   web:
-    image: vafelka/lab1:latest
+    image: myacr1123.azurecr.io/lab1:latest
     ports:
       - "8080:8080"
     restart: always

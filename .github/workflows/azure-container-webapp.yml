@@ -36,3 +36,10 @@ jobs:
 
     - name: Push image to ACR
       run: docker push $IMAGE
+
+    - name: Deploy to Azure Container App
+      run: |
+        az containerapp update \
+          --name mysuperapp \
+          --resource-group myvm1_group_05102216 \
+          --image ${{ env.IMAGE }}
